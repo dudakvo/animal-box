@@ -1,0 +1,12 @@
+.imgModule {
+  height: 300px;
+  width: 300px;
+}
+
+.imgModule img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: contain;
+}
