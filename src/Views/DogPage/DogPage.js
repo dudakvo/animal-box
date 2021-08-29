@@ -3,6 +3,8 @@ import Dog from '../../Components/Dog';
 import { DOG_UPDATE_INTERVAL } from '../../helpers/constants';
 import { handleImgDog } from '../../services/get-url';
 
+import s from './DogPage.module.css';
+
 export default function DogPage() {
   const [imgDog, setImgDog] = useState({});
 
@@ -17,7 +19,7 @@ export default function DogPage() {
   }, []);
 
   return (
-    <div>
+    <div className={s.page}>
       <Dog img={imgDog} />
     </div>
   );

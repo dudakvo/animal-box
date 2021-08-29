@@ -1,3 +1,8 @@
+.navigation {
+  width: 225px;
+  margin: auto;
+}
+
 nav li {
   display: inline-block;
 }

@@ -4,6 +4,8 @@ import Fox from '../../Components/Fox';
 import { handleImgFox } from '../../services/get-url';
 import { FOX_UPDATE_INTRVAL } from '../../helpers/constants';
 
+import s from './FoxPage.module.css';
+
 export default function FoxPage() {
   const [imgFox, setImgFox] = useState({});
 
@@ -18,7 +20,7 @@ export default function FoxPage() {
   }, []);
 
   return (
-    <div>
+    <div className={s.page}>
       <Fox img={imgFox} />
     </div>
   );
